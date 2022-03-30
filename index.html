@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>工藤理子20歳お誕生日おめでとう！</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <!-- <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Roboto:400"/> -->
+        <!-- <script  src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script> -->
+        </head>
+    <body>
+        <script LANGUAGE="javascript">
+            var $button = document.querySelector('.button');
+            $button.addEventListener('click', function() {
+                var duration = 0.3,
+                delay = 0.08;
+                TweenMax.to($button, duration, {scaleY: 1.6, ease: Expo.easeOut});
+                TweenMax.to($button, duration, {scaleX: 1.2, scaleY: 1, ease: Back.easeOut, easeParams: [3], delay: delay});
+                TweenMax.to($button, duration * 1.25, {scaleX: 1, scaleY: 1, ease: Back.easeOut, easeParams: [6], delay: delay * 3 });
+            });
+        </script>
+        <h2>工藤理子20歳生誕壁紙くじ：</h2>
+        <div class="button" onclick="location.href='kuji.html'">
+            <p>くじを引く</p>
+        </div>
+    </body>
+</html>

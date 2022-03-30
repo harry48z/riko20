@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>工藤理子20歳お誕生日おめでとう！</title>
+    <meta charset="utf-8">
+    <script  src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="  crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <SCRIPT LANGUAGE="JavaScript">
+    var rand1 = 0;
+    var useRand = 0;
+    images = new Array;
+    images[1] = new Image();
+    images[1].src = "img/r1.jpg";
+    images[2] = new Image();
+    images[2].src = "img/r2.jpg";
+    images[3] = new Image();
+    images[3].src = "img/r3.jpg";
+    images[4] = new Image();
+    images[4].src = "img/r4.jpg";
+    images[5] = new Image();
+    images[5].src = "img/r5.jpg";
+    images[6] = new Image();
+    images[6].src = "img/r6.jpg";
+    images[7] = new Image();
+    images[7].src = "img/r7.jpg";
+    images[8] = new Image();
+    images[8].src = "img/r8.jpg";
+    images[9] = new Image();
+    images[9].src = "img/r9.jpg";
+    images[10] = new Image();
+    images[10].src = "img/r10.jpg";
+    images[11] = new Image();
+    images[11].src = "img/r11.jpg";
+    images[12] = new Image();
+    images[12].src = "img/r12.jpg";
+    images[13] = new Image();
+    images[13].src = "img/r13.jpg";
+    images[14] = new Image();
+    images[14].src = "img/r14.jpg";
+    images[15] = new Image();
+    images[15].src = "img/r15.jpg";
+            
+    function swapPic() {
+      confirm("おめでとうございます！");
+      var imgnum = images.length - 1;
+      do {
+          var randnum = Math.random();
+          rand1 = Math.round((imgnum - 1) * randnum) + 1;
+        } while (rand1 == useRand);
+        useRand = rand1;
+        document.randimg.src = images[useRand].src;
+    }
+  </script>
+
+  <body bgcolor="#FFFFFF" text="#000000" OnLoad="swapPic()">
+    <img name="randimg" src="" style="position:relative; max-width: 100%; height: auto;">
+    <input type="button" id="back" onclick="location.href='index.html'" value="戻る">
+  </body>
+</html> 
